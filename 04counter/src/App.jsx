@@ -10,7 +10,11 @@ function App() {
   const addValue = () => {
     // console.log(counter);
     // counter = counter + 1;
-    setCounter(counter + 1);
+
+    //!updating based on the previous value of the state
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
   };
   const removeValue = () => {
     if (counter <= 0) return;
